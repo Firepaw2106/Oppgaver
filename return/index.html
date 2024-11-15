@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mainDiv"></div>
+    <button onclick="createAndShowHTML('green','hallo verden', 30,'dotted',3)"> test 1</button>
+    <button onclick="createAndShowHTML('blue','hei på deg', 20, 'dashed',5)"> test 2</button>
+    <button onclick="createAndShowHTML('red','hva skjer ', 10,'solid',10)">test 3</button>
+
+    <script>
+
+        function createAndShowHTML(color,text,fontSize,borderStyle,borderSize){
+            document.getElementById("mainDiv").innerHTML = `
+            <div ${createStyle(color, fontSize,borderStyle,borderSize)} > ${text} </div>
+            `;
+        }
+
+        function createStyle(color, fontSize, borderStyle, borderSize){
+            return `style= " ${createBackgroundColor(color)},${createFontSize(fontSize)} ${createBorderStyle(borderStyle,borderSize)}"`;
+
+        }
+
+        function createBackgroundColor(color){
+            return `background-Color: ${color};`;
+        }
+
+        function createFontSize(fontSize){
+            return `font-size: ${fontSize}px;`;
+        }
+
+        function createBorderStyle(borderStyle,borderSize){
+            return `border: black ${borderStyle},${createBorderSize(borderSize)};`;
+        }
+
+        function createBorderSize(borderSize){
+            return `${borderSize}px;`;
+        }
+
+    </script>
+</body>
+</html>

@@ -37,18 +37,19 @@
             <li>D&D</li>
 
         </ul>
-        <button onclick="colorchange()">trykk her</button>
+        <p>Trykk på knappen for å endre bakgrunnsfargen til <em>BLÅ</em></p>
+        <button onclick="colorchange()" id="buttonClick">trykk her</button>
 
     </div>
     <script>
 
-        // let page = document.getElementById("background");
-        // let backColor = 
+    
 
-        // function colorchange(){
-        //     backColor= rgb(90, 50, 74);
-        //    page.innerHTML =backColor 
-        // }
+        function colorchange(){
+            
+         document.getElementById("background").style.backgroundColor = '#6CBDE9';
+            
+        }
     </script>
 </body>
 </html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="FargeOgTekst"></div>
+        <button onclick="EndreDiv('blue','første teskt')">knapp 1</button>
+        <button onclick="EndreDiv('red','andre tekst')">knapp 2</button>
+
+    <script>
+
+        function EndreDiv(color, text){
+            document.getElementById("FargeOgTekst").style.background = color;
+            document.getElementById("FargeOgTekst").innerHTML = text;
+
+        }
+    </script>
+</body>
+</html>
