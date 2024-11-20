@@ -15,29 +15,31 @@
         <div id="GreenLight"></div>
         
     </div>
-    <button onclick="setRedLight()">Start</button>
-    <button onclick="setYellowLight()">1...2...3...</button>
-    <button onclick="setGreenLight()">GO!</button>
+    <button onclick="setRedLight('red')">Start</button>
+    <button onclick="setYellowLight('yellow')">1...2...3...</button>
+    <button onclick="setGreenLight('green')">GO!</button>
 
     <script >
 
-        function setRedLight(){
+        
 
-          
-
-        }
-
-        function setYellowLight(){
-
+        function setYellowLight(color){
             
+            
+            document.getElementById("YellowLight").style.backgroundColor = color
 
         }
 
-        function setGreenLight(){
+        function setGreenLight(color){
 
+            document.getElementById("GreenLight").style.backgroundColor =color
 
         }
+        function setRedLight(color){
 
+             document.getElementById("RedLight").style.backgroundColor =color
+
+        }
     </script>
 
 </body>
