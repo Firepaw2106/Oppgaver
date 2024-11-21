@@ -10,34 +10,44 @@
 <body>
     <div id="trafikkLys">
 
-        <div id="RedLight"></div>
-        <div id="YellowLight"></div>
-        <div id="GreenLight"></div>
+        <div id="RedLight" class="redCircle"></div>
+        <div id="YellowLight" class = "yellowCircle"></div>
+        <div id="GreenLight" class ="greenCircle" ></div>
         
     </div>
-    <button onclick="setRedLight('red')">Start</button>
-    <button onclick="setYellowLight('yellow')">1...2...3...</button>
-    <button onclick="setGreenLight('green')">GO!</button>
+    <button onclick="setRedLight('green', 'yellow', 'red')">Start</button>
+    <button onclick="setYellowLight('yellow', 'green','red')">1...2...3...</button>
+    <button onclick="setGreenLight('green', 'red', 'yellow')">GO!</button>
 
     <script >
 
+        function setLight(color,color,color){
+
+          document.getElementById("RedLight").classList.remove("active");
+          document.getElementById("YellowLight").classList.remove("active");
+          document.getElementById("GreenLight").classList.add("active");
+        }
         
 
-        function setYellowLight(color){
-            
+        function setYellowLight(color,color,color){
+
+            setLight('yellow', 'green','red')
             
             document.getElementById("YellowLight").style.backgroundColor = color
 
         }
 
-        function setGreenLight(color){
+        function setGreenLight(color,color,color){
+
+            setLight('green', 'red', 'yellow')
 
             document.getElementById("GreenLight").style.backgroundColor =color
 
         }
-        function setRedLight(color){
+        function setRedLight(color,color,color){
 
-             document.getElementById("RedLight").style.backgroundColor =color
+             setLight('green', 'yellow', 'red'
+              document.getElementById("RedLight").style.backgroundColor = color
 
         }
     </script>
