@@ -7,48 +7,55 @@
     <link rel="stylesheet" href="style.css">
     
 </head>
-<body>
+<body onload="lightTimer()">
     <div id="trafikkLys">
 
-        <div id="RedLight" class="redCircle"></div>
-        <div id="YellowLight" class = "yellowCircle"></div>
-        <div id="GreenLight" class ="greenCircle" ></div>
+        <div id="rød" class="rød sirkel"></div>
+        <div id="gul" class = "gul sirkel"></div>
+        <div id="grønn" class ="grønn sirkel" ></div>
         
     </div>
-    <button onclick="setRedLight('green', 'yellow', 'red')">Start</button>
-    <button onclick="setYellowLight('yellow', 'green','red')">1...2...3...</button>
-    <button onclick="setGreenLight('green', 'red', 'yellow')">GO!</button>
+    <button onclick="activeLight('grønn', 'gul', 'rød')">Start</button>
+    <button onclick="activeLight('gul', 'frønn','rød')">1...2...3...</button>
+    <button onclick="activeLight('grønn', 'rød', 'gul')">GO!</button>
 
     <script >
 
-        function setLight(color,color,color){
+     function setYellowLight(){
 
-          document.getElementById("RedLight").classList.remove("active");
-          document.getElementById("YellowLight").classList.remove("active");
-          document.getElementById("GreenLight").classList.add("active");
+        activeLight('rød', 'grønn','gul');
+
+
+    }
+
+    function lightTimer(){
+
+        setTimer(setRedLight, 1000)
+
+    }
+    
+    function setGreenLight(){
+
+       activeLight('rød','gul', 'grønn', 'grønn');
+
+       setTimeout(setYellowLight, 2000);
+
+}
+
+        function setLight("rød","gul","grøn"){
+
+          document.getElementById("rød").classList.remove("active");
+          document.getElementById("gul").classList.remove("active");
+          document.getElementById("grønn").classList.add("active");
         }
         
 
-        function setYellowLight(color,color,color){
+       
 
-            setLight('yellow', 'green','red')
-            
-            document.getElementById("YellowLight").style.backgroundColor = color
+        function setRedLight(){
 
-        }
-
-        function setGreenLight(color,color,color){
-
-            setLight('green', 'red', 'yellow')
-
-            document.getElementById("GreenLight").style.backgroundColor =color
-
-        }
-        function setRedLight(color,color,color){
-
-             setLight('green', 'yellow', 'red'
-              document.getElementById("RedLight").style.backgroundColor = color
-
+             setLight('grønn','gul', 'rød')
+              setTimer( setRedLight,1000)
         }
     </script>
 
