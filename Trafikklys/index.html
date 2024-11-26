@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrafikkLys</title>
     <link rel="stylesheet" href="style.css">
+
     
 </head>
-<body onload="lightTimer()">
+<body>
     <div id="trafikkLys">
 
         <div id="rød" class="rød sirkel"></div>
@@ -15,48 +16,35 @@
         <div id="grønn" class ="grønn sirkel" ></div>
         
     </div>
-    <button onclick="activeLight('grønn', 'gul', 'rød')">Start</button>
-    <button onclick="activeLight('gul', 'frønn','rød')">1...2...3...</button>
-    <button onclick="activeLight('grønn', 'rød', 'gul')">GO!</button>
+    <button onclick="activeLight('grønn','gul','rød','rød')">Start</button>
+    <button onclick="activeLight('rød','grønn','gul','gul')">1...2...3...</button>
+    <button onclick="activeLight('gul','rød','grønn','grønn')">GO!</button>
 
-    <script >
-
-     function setYellowLight(){
-
-        activeLight('rød', 'grønn','gul');
-
-
-    }
-
-    function lightTimer(){
-
-        setTimer(setRedLight, 1000)
-
-    }
     
-    function setGreenLight(){
+    <script> 
+        
+function setYellowLight(){
 
-       activeLight('rød','gul', 'grønn', 'grønn');
-
-       setTimeout(setYellowLight, 2000);
-
+activeLight('rød','grønn','gul','gul')
 }
 
-        function setLight("rød","gul","grøn"){
+function setGreenLight(){
 
-          document.getElementById("rød").classList.remove("active");
-          document.getElementById("gul").classList.remove("active");
-          document.getElementById("grønn").classList.add("active");
-        }
-        
+activeLight('gul','rød','grønn','grønn')
+}
 
-       
+function activeLight(divId1, divId2, divId3,divId4){
 
-        function setRedLight(){
+document.getElementById(divId1).classList.remove("active");
+document.getElementById(divId2).classList.remove("active");
+document.getElementById(divId3).classList.add("active");
+document.getElementById(divId4).classList.add("active");
 
-             setLight('grønn','gul', 'rød')
-              setTimer( setRedLight,1000)
-        }
+}
+function setRedLight(){
+
+activeLight('grønn','gul','rød','rød')
+}
     </script>
 
 </body>

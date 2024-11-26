@@ -10,9 +10,9 @@
     
 }
 
-#rød  {
-    background-color: rgba(255, 0, 0, 0.5);
-    /* opacity: 0.5; */
+.rød  {
+    background-color: red;
+    opacity: 50%;
     width: 100px;
     height: 100px;
     border: 3px solid black;
@@ -22,9 +22,9 @@
     
 }
 
-#gul  {
-    background-color: rgba(255, 255, 0, 0.5);
-    /* opacity: 50%; */
+.gul  {
+    background-color: yellow;
+    opacity: 50%;
     width: 100px;
     height: 100px;
     border: 3px solid black;
@@ -32,13 +32,16 @@
     margin: 5%;
 }
 
-#grønn  {
-    background-color: rgba(0, 128, 0, 0.5);
-    /* opacity: 50%; */
+.grønn  {
+    background-color: green;
     width: 100px;
     height: 100px;
     border: 3px solid black;
     border-radius: 100%;
     margin: 5%;
+    opacity: 50%;
+}
+.active {
+    opacity: 100%;
 }
 
