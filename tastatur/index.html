@@ -18,10 +18,23 @@
     </div>
 
     <script>
+
+        let showTexst= document.getElementById("tekstBoks")
+
+
         function letterClick(text){
-            document.getElementById("tekstBoks").innerHTML = text
+    
+             
+             showTexst.innerHTML = showTexst.innerHTML + `${showLetter(text)}` ;
+
+            
 
         }
+        function showLetter(text){
+            
+            return `${text}`;
+        }
+        
 
         
     </script>
