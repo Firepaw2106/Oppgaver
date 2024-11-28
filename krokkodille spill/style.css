@@ -1,0 +1,21 @@
+
+body{
+    background-color: skyblue;
+    color: rgb(3, 3, 82);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#SvarBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 70px;
+    margin: 10px;
+}

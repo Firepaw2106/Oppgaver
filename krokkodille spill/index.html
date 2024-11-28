@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="RandomNub()">
+
+    <h1>Krokodille Spill</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Schnappi.png" alt="">
+     <h4>Er tallet til venstre større ">", mindre "<" eller 
+        helt lik "=" tallet til høyre?</h4>
+        
+    <div id="SvarBox">
+        <p id="Tallplass1"></p>
+        <input type="text" placeholder="Skriv Inn">
+        <p id="Tallplass2"></p>
+
+    </div>
+    <div>
+        <button onclick="CheckAnswer()">Svar</button>
+        <button onclick="RandomNub()">Neste</button>
+    </div>
+
+    <p>Poengsum:</p>
+    <p id="Poengsum">0</p>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
