@@ -9,9 +9,9 @@ function RandomNub(){
     TallNr2.innerHTML = Math.floor(Math.random() * 11);
 }
 
-function CheckAnswer(){
+function compareAnswer(){
 
-    if(TallNr1 <= TallNr2 && svarInput.){
+    if(TallNr1 < TallNr2 && svarInput.innerHTML = ("<"));{
         sum = +1
     }
 
