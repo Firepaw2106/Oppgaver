@@ -1,0 +1,17 @@
+#app{
+    /* display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+
+    border: 3px solid black; */
+}
+
+div{
+    display: flex;
+    flex-direction: row;
+    /* height: 100%;
+    width: 100%; */
+
+    border: 3px solid black;
+}
