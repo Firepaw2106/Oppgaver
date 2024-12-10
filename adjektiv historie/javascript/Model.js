@@ -1,2 +1,2 @@
 
-let  Adjektiv = "...."
+let  Adjektiv = ""
