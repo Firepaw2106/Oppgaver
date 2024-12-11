@@ -1,10 +1,30 @@
-#app{
+body{
+background-color: rgb(132, 163, 149);
+color: rgb(48, 6, 10);
+}
+
+#view{
+    background-color: rgb(112, 143, 129);
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
-
-    border: 3px solid black;
+    justify-content: center;
+    align-items: center;
+    border: 5px dotted rgb(48, 6, 10);
+    padding: 20px;
+}
+#ButtonConteiner{
+    display: flex;
+    flex-direction: row;
+   
+    
+}
+div{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 10px;
+   
 }
 
 .adjektiv{
@@ -12,9 +32,35 @@
     height: 100%;
     width: 100%;
 
-    border: 3px solid black;
 }
+#tekst{
+    background-color: rgb(165, 201, 185);
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(48, 6, 10);
+    border-radius: 10px;
+    padding: 5px;
+    max-width: 500px;
+    
+}
+
 
 .noDisplay{
     display:none;
+}
+
+img{
+    width: 200px;
+    height: 300px;
+    border: 10px groove rgb(165, 118, 87);
+    box-shadow: 3px 3px 5px;
+    
+}
+
+button{
+background-color:rgb(165, 118, 87);
+cursor: pointer;
+border: 5px groove rgb(165, 118, 87);
+box-shadow: 3px 3px 5px;
+
 }
