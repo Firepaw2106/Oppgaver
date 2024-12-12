@@ -7,6 +7,7 @@ function updateView(){
     <div>
         <h1> Det <div id= "firstadjektiv" class= "adjektiv">....</div> trollet.</h1>
         <img src="https://images.fineartamerica.com/images-medium-large-5/forest-troll-theodor-kittelsen.jpg" alt="">
+        
         <div id="tekst">Det var en gang et <div id= "secendadjektiv" class= "adjektiv ">....</div> troll som bodde langt ute i 
             den <div id= "thirdadjektiv" class= "adjektiv">....</div> skogen.
             Trollet hadde tre <div id= "fourthadjektiv" class= "adjektiv">....</div> hoder
