@@ -37,11 +37,13 @@ function showInput(){
 
 function countVokaler(){
    
-    
     for(let i=0; i<= input.value.length; i++){
+          
+     
         
     
         
     }
     showInput()
+    return`${aCounter}`;
 }
